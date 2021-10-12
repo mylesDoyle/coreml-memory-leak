@@ -5,7 +5,7 @@ import torch.nn as nn
 class Model(nn.Module):
 	def __init__(self):
 		super().__init__()
-		upscale_factor  = 16
+		upscale_factor  = 8
 
 		self.Conv1 = nn.Conv2d(in_channels = 48, out_channels = 48, kernel_size = 3, stride = 1)
 		self.Conv2 = nn.Conv2d(48, 48, 3, 1)
