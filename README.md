@@ -2,6 +2,8 @@
 
 This repository contains a simple example to reproduce the memory leak observed when running inference on a CoreML model on an iOS device (specifically tested on the iPhone12). To reproduce the memory leak, you must first generate a model by converting a PyTorch model to a CoreML `MLModel`, and then build and launch the model in a mobile application using XCode.
 
+The bug report submitted to `coremltools` is available [here](https://github.com/apple/coremltools/issues/1312).
+
 This example assumes you have installed and loaded the following environment listed.
 
 ## System environment:
